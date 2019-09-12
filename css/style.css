@@ -33,10 +33,10 @@ section {
   height: auto;
 }
 
-.gfx img {
-/* width: .2vw; 
-height: .5vh; */
-}
+/* .gfx img {
+width: .2vw; 
+height: .5vh;
+} */
 
 /* specific box */
 .gfx1{
@@ -197,8 +197,10 @@ h2 {
   /* background: url(../img/face-floor.jpg);
   background: url(../img/diversion.jpg); */
   /* background: url(../img/puddle.jpg); */
-  background: url(../img/leaf-floor.jpg);
-  background-size: cover;
+
+
+  /* background: url(../img/leaf-floor.jpg);
+  background-size: cover; */
 }
 
 .sectionIntro h1 {
@@ -325,8 +327,21 @@ input[type="checkbox"]:checked ~ label .middle {
 
           /* media queries */
 
+          .sectionIntro {
+            background-color: black;
+          }
+        
+
+
+
 /* Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) {
+
+  .sectionIntro {
+    background: linear-gradient(black, white);
+  }
+
   /* Animate content position when menu is showing  */
   input[type="checkbox"]:checked ~ .content {
     transform: translateX(40%);
@@ -354,6 +369,11 @@ input[type="checkbox"]:checked ~ label .middle {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .sectionIntro {
+    background: linear-gradient(red, white);
+  }
+
   /* Animate content position when menu is showing  */
   input[type="checkbox"]:checked ~ .content {
     transform: translateX(20%);
@@ -379,6 +399,11 @@ input[type="checkbox"]:checked ~ label .middle {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  .sectionIntro {
+    background: linear-gradient(blue, white);
+  }
+
   /* Animate content position when menu is showing  */
   input[type="checkbox"]:checked ~ .content {
     transform: translateX(20%);
@@ -404,6 +429,12 @@ input[type="checkbox"]:checked ~ label .middle {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+  .sectionIntro {
+    background: linear-gradient(green, white);
+  }
+
+
   /* Animate content position when menu is showing  */
   input[type="checkbox"]:checked ~ .content {
     transform: translateX(20%);
