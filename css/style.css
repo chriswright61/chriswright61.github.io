@@ -328,15 +328,15 @@ input[type="checkbox"]:checked ~ label .middle {
           /* media queries */
 /* mobile default */
 .sectionIntro {
-  background-color: red;
+  background-color: blue;
 }
 
 input[type="checkbox"]:checked ~ .content {
-  transform: translateX(80%);
+  transform: translateX(70%);
 }
 
 input[type="checkbox"]:checked ~ nav {
-  width: 80%;
+  width: 70%;
 }
 
 /* Small devices (landscape phones, 576px and up) */
