@@ -19,6 +19,82 @@ section {
   background-color: #fff;
 }
 
+nav {
+  background-color: #0f5e7e;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: 100px;
+  text-align: left;
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.navAnchor {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  padding: 20px 0;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s 0.15s ease-in;
+}
+
+.navAnchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 0;
+  transition: width 0.3s ease-in;
+  z-index: -1;
+}
+
+.navAnchor:hover {
+  color: #0799d3;
+}
+
+.navAnchor:hover::after {
+  width: 100%;
+}
+
+.content {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  transition: transform 0.5s ease-in-out;
+}
+
+.section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height set in media query */
+}
+
+
+
+
+
 /* poster images etc */
 .gfx-container {
   width: 100%;
@@ -106,69 +182,7 @@ height: .5vh; */
 }
 
 
-nav {
-  background-color: #0f5e7e;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  display: none;
-}
 
-.content {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  right: 0;
-  left: 0;
-  background-color: #fff;
-  z-index: 2;
-  transition: transform 0.5s ease-in-out;
-}
-
-.navList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: 5px;
-  margin-top: 100px;
-  text-align: left;
-  border-top: 2px solid rgba(255, 255, 255, 0.7);
-}
-
-.navAnchor {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
-  padding: 20px 0;
-  display: block;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  position: relative;
-  transition: color 0.3s 0.15s ease-in;
-}
-
-.navAnchor::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  background-color: #fff;
-  width: 0;
-  transition: width 0.3s ease-in;
-  z-index: -1;
-}
-
-.navAnchor:hover {
-  color: #0799d3;
-}
-
-.navAnchor:hover::after {
-  width: 100%;
-}
 
 /* flexbox stuff */
 
@@ -190,18 +204,6 @@ h2 {
   font-family: "Oswald", sans-serif;
   font-size: 6em;
   margin: 0;
-}
-
-.sectionIntro {
-  /* background-color: black;
-  background: linear-gradient(black, white); */
-  /* background: url(../img/face-floor.jpg);
-  background: url(../img/diversion.jpg); */
-  /* background: url(../img/puddle.jpg); */
-
-
-  /* background: url(../img/leaf-floor.jpg);
-  background-size: cover; */
 }
 
 .sectionIntro h1 {
@@ -326,26 +328,38 @@ input[type="checkbox"]:checked ~ label .middle {
   width: 0;
 }
 
-          /* media queries */
+/* media queries */
 /* mobile default */
+
+.section-container { height: 100vh; }
+
 .sectionIntro {
-  background-color: #20a0d3;
+  /* background-color: #20a0d3; */
+  background: url(../img/face-floor.jpg);
+  background-size: cover;
 }
 
-input[type="checkbox"]:checked ~ .content {
-  transform: translateX(50%);
+input[type="checkbox"]:checked ~ .content { transform: translateX(50%); }
+input[type="checkbox"]:checked ~ nav { width: 50%; }
+
+/* individual box */
+.web {
+  flex: 1 0 25%; 
+  margin: 10%;
+  margin-top: 0; 
 }
 
-input[type="checkbox"]:checked ~ nav {
-  width: 50%;
-}
 
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
 
+  .section-container { height: 100vh; }
+
   .sectionIntro {
-    background: linear-gradient(black, white);
+    /* background: linear-gradient(black, white); */
+    background: url(../img/leaf-floor.jpg);
+    background-size: cover;
   }
 
   /* Animate content position when menu is showing  */
@@ -367,7 +381,8 @@ input[type="checkbox"]:checked ~ nav {
 /* individual box */
 .web {
   flex: 1 0 19%; 
-  margin: 5px;
+  margin: 20%;
+  margin-top: 1em; 
 }
 
 
@@ -376,8 +391,15 @@ input[type="checkbox"]:checked ~ nav {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+  .section-container { height: 100vh; }
+
   .sectionIntro {
     background: linear-gradient(red, white);
+  }
+
+  .sectionIntro {
+    background: url(../img/diversion.jpg);
+    background-size: cover;
   }
 
   /* Animate content position when menu is showing  */
@@ -410,6 +432,11 @@ input[type="checkbox"]:checked ~ nav {
     background: linear-gradient(blue, white);
   }
 
+  .sectionIntro {
+    background: url(../img/face-floor.jpg);
+    background-size: cover;
+  }
+
   /* Animate content position when menu is showing  */
   input[type="checkbox"]:checked ~ .content {
     transform: translateX(20%);
@@ -440,6 +467,10 @@ input[type="checkbox"]:checked ~ nav {
     background: linear-gradient(green, white);
   }
 
+  .sectionIntro {
+    background: url(../img/puddle.jpg);
+    background-size: cover;
+  }
 
   /* Animate content position when menu is showing  */
   input[type="checkbox"]:checked ~ .content {

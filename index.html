@@ -7,23 +7,22 @@
     <link href="css/style.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap"  rel="stylesheet" />
+   
+    <!-- <link
       href="vendor/font-awesome/css/font-awesome.min.css"
       rel="stylesheet"
       type="text/css"
-    />
+    /> -->
 
     <title>Chris Wright</title>
   </head>
 
   <body>
     <section>
+      
+      <!-- navigation button -->
       <input type="checkbox" id="myInput" />
-
       <label for="myInput">
         <span class="bar top"></span>
         <span class="bar middle"></span>
@@ -34,9 +33,7 @@
         <ul class="navList">
           <li><a href="#intro" class="navAnchor">Intro</a></li>
           <li><a href="#web-design" class="navAnchor">Web Design</a></li>
-          <li>
-            <a href="#graphic-design" class="navAnchor">Graphic Design</a>
-          </li>
+          <li><a href="#graphic-design" class="navAnchor">Graphic Design</a></li>
           <li><a href="#photography" class="navAnchor">Photography</a></li>
           <li><a href="#marketing" class="navAnchor">Marketing</a></li>
         </ul>
@@ -44,14 +41,15 @@
 
       <!-- this div gets animated by the css sibling -->
       <div class="content">
+
         <a name="intro"></a>
-        <div class="section-container sectionIntro ">
+        <div class="section-container sectionIntro">
           <div class="sectionContent">
             <h1>
-              intro
+              Chris Wright
             </h1>
             <p>
-              intro text
+              Web Design&nbsp; &nbsp; &nbsp;Graphic Design &nbsp; &nbsp; &nbsp;Photography
             </p>
           </div>
         </div>
@@ -61,14 +59,14 @@
           <div class="sectionContent">
             <h2>Web Design</h2>
             <p>
-              intro text
+              Static sites to Drupal Content Management systems
             </p>
-            <!-- <div class="web-container">
+            <div class="web-container">
                 <div class="web web1"></div>
                 <div class="web web2"></div>
-                <div class="web web1"></div>
-                <div class="web web2"></div>
-            </div> -->
+                <!-- <div class="web web1"></div>
+                <div class="web web2"></div> -->
+            </div>
           </div>
         </div>
        
@@ -109,6 +107,7 @@
             </p>
           </div>
         </div>
+
         <a name="marketing"></a>
         <div class="section-container sectionMarketing">
           <div class="sectionContent">
@@ -118,7 +117,8 @@
             </p>
           </div>
         </div>
-      </div>
+
+      </div> <!-- end of .content div -->
     </section>
   </body>
 </html>
