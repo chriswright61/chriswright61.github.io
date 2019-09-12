@@ -332,11 +332,11 @@ input[type="checkbox"]:checked ~ label .middle {
 }
 
 input[type="checkbox"]:checked ~ .content {
-  transform: translateX(70%);
+  transform: translateX(100%);
 }
 
 input[type="checkbox"]:checked ~ nav {
-  width: 70%;
+  width: 100%;
 }
 
 /* Small devices (landscape phones, 576px and up) */
