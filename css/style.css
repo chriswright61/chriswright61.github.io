@@ -1,48 +1,263 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-main {
+/* main {
   height: 100%;
   width: 100%;
-}
-
-
-/* h1 {
-  margin: 0;
-  position: relative;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  text-align: center;
-  font-size: 40px;
 } */
-
-
-nav {
-  background-color: #0799d3;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-/*  width: 20%;*/
-  z-index: 1;
-  display: none;
-}
 
 section {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: #fff;
-/*  overflow: hidden;*/
 }
 
+/* poster images etc */
+.gfx-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center; 
+}
+
+/* individual box */
+.gfx {
+  height: auto;
+}
+
+.gfx img {
+/* width: .2vw; 
+height: .5vh; */
+}
+
+/* specific box */
+.gfx1{
+    content: url(../img/posters/portfolio1.jpg);
+ }
+ .gfx2{
+  content: url(../img/posters/portfolio2.jpg);
+}
+.gfx3{
+  content: url(../img/posters/portfolio3.jpg);
+}
+.gfx4{
+  content: url(../img/posters/portfolio4.jpg);
+}
+.gfx5{
+  content: url(../img/posters/portfolio5.jpg);
+}
+.gfx6{
+  content: url(../img/posters/portfolio6.jpg);
+}
+.gfx7{
+  content: url(../img/posters/portfolio7.jpg);
+}
+.gfx8{
+  content: url(../img/posters/portfolio8.jpg);
+}
+.gfx9{
+  content: url(../img/posters/portfolio9.jpg);
+}
+.gfx10{
+  content: url(../img/posters/portfolio10.jpg);
+}
+.gfx11{
+  content: url(../img/posters/portfolio11.jpg);
+}
+.gfx12{
+  content: url(../img/posters/portfolio12.jpg);
+}
+
+
+
+/* website images */
+.web-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center; 
+}
+
+/* individual box */
+.web {
+  height: auto;
+}
+
+/* .web img {
+/* width: .2vw; 
+height: .5vh; */
+/* }  */
+
+/* specific box */
+.web1{
+    content: url(../img/web/web-c20.jpg);
+ }
+ .web2{
+  content: url(../img/web/web-victorian.jpg);
+}
+
+
+nav {
+  background-color: #0f5e7e;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.content {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.navAnchor {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  padding: 20px 0;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s 0.15s ease-in;
+}
+
+.navAnchor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #fff;
+  width: 0;
+  transition: width 0.3s ease-in;
+  z-index: -1;
+}
+
+.navAnchor:hover {
+  color: #0799d3;
+}
+
+.navAnchor:hover::after {
+  width: 100%;
+}
+
+/* flexbox stuff */
+
+.section-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionContent {
+  width: 100%;
+  text-align: center;
+}
+
+.sectionContent h1,
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 6em;
+  margin: 0;
+}
+
+.sectionIntro {
+  background-color: black;
+  background: linear-gradient(black, white);
+  /* background: url(../img/face-floor.jpg);
+  background: url(../img/diversion.jpg); */
+  /* background: url(../img/puddle.jpg); */
+  background: url(../img/leaf-floor.jpg);
+  background-size: cover;
+}
+
+.sectionIntro h1 {
+  color: white;
+}
+
+.sectionIntro p {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.sectionWeb {
+  background-color: blue;
+  background: url(../img/diversion.jpg);
+  background-size: cover;
+}
+
+.sectionWeb h2 {
+  color: white;
+}
+
+.sectionWeb p {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.sectionGraphicDesign {
+  background-color: grey;
+  /* background: url(../img/diversion.jpg); */
+  /* background-size: cover; */
+}
+
+.sectionGraphicDesign h2 {
+  color: white;
+}
+
+.sectionPhotography {
+  background-color: blue;
+  background: url(../img/diversion.jpg);
+  background-size: cover;
+}
+
+.sectionPhotography h2 {
+  color: white;
+}
+
+.sectionMarketing {
+  background-color: red;
+  background: url(../img/diversion.jpg);
+  background-size: cover;
+}
+
+.sectionMarketing h2 {
+  color: white;
+}
+
+/* label stuff here used for menu display  */
 label {
   display: inline-block;
   padding: 7px 10px;
@@ -55,67 +270,13 @@ label {
 
 .bar {
   display: block;
-  background-color: #0799d3;
-  width: 30px;
-  height: 3px;
+  background-color: #ffffff;
+  width: 50px;
+  height: 5px;
   border-radius: 5px;
-  margin: 5px auto;
-  transition: background-color .5s ease-in, transform .5s ease-in, width .5s ease-in;
-}
-
-.content {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  right: 0;
-  left: 0;
-  background-color: #fff;
-  z-index: 2;
-  transition: transform .5s ease-in-out;
-}
-
-
-
-.navList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 100px;
-  text-align: center;
-  border-top: 2px solid rgba(255, 255, 255, .7);
-}
-
-.navAnchor {
-  border-bottom: 2px solid rgba(255, 255, 255, .7);
-  padding: 20px 0;
-  display: block;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  position: relative;
-  transition: color .3s .15s ease-in;
-}
-
-.navAnchor::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  background-color: #fff;
-  width: 0;
-  transition: width .3s ease-in;
-  z-index: -1;
-}
-
-.navAnchor:hover {
-  color: #0799d3;
-}
-
-.navAnchor:hover::after {
-  width: 100%;
+  margin: 8px auto;
+  transition: background-color 0.6s ease-in, transform 0.6s ease-in,
+    width 0.6s ease-in;
 }
 
 input[type="checkbox"] {
@@ -123,22 +284,18 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked ~ .content {
-  transform: translateX(20%);
   background-color: #eee;
 }
 
 /* ~ selector binds the animation to sibling with the class content */
 
 input[type="checkbox"]:unchecked ~ nav {
-display: none;
+  display: none;
 }
 
 input[type="checkbox"]:checked ~ nav {
-display: block;
-width: 20%;
+  display: block;
 }
-
-
 
 input[type="checkbox"]:checked ~ label .bar {
   background-color: #fff;
@@ -152,65 +309,121 @@ input[type="checkbox"]:checked ~ label .top {
   transform: translateY(0px) rotateZ(45deg);
 }
 
+/* was 15px now 25 due to scaling */
+
 input[type="checkbox"]:checked ~ label .bottom {
-  -webkit-transform: translateY(-15px) rotateZ(-45deg);
-  -moz-transform: translateY(-15px) rotateZ(-45deg);
-  -ms-transform: translateY(-15px) rotateZ(-45deg);
-  -o-transform: translateY(-15px) rotateZ(-45deg);
-  transform: translateY(-15px) rotateZ(-45deg);
+  -webkit-transform: translateY(-25px) rotateZ(-45deg);
+  -moz-transform: translateY(-25px) rotateZ(-45deg);
+  -ms-transform: translateY(-25px) rotateZ(-45deg);
+  -o-transform: translateY(-25px) rotateZ(-45deg);
+  transform: translateY(-25px) rotateZ(-45deg);
 }
 
 input[type="checkbox"]:checked ~ label .middle {
   width: 0;
 }
 
+          /* media queries */
 
-/* flexbox stuff */
-
-.section-container {
-	width: 100%;
-	height:100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-
-.section-container h1, h2 {
-  color: white;
-  font-size: 6em;
-}
-
-.section-container > h2:first-child {
-  flex: 1 0 100%;
-}
-
-.sectionIntro h2 {
-  color: white;
- 
-}
-.sectionIntro p {
-	font-size: 24px;
-	text-align: center;
-	color: white;
-}
-
-
-.sectionIntro {
-background-color: black;
-background: linear-gradient(black, white);
-background: url(../img/face-floor.jpg); 
-background-size: cover;
-}
-.sectionWeb{
-background-color: blue;
-}
-.sectionGraphicDesign {
-  background-color: red;
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* Animate content position when menu is showing  */
+  input[type="checkbox"]:checked ~ .content {
+    transform: translateX(40%);
   }
-.sectionPhotography {
-  background-color: blue;
+
+  input[type="checkbox"]:checked ~ nav {
+    width: 40%;
   }
-.sectionMarketing {
-  background-color: red;
+
+/* individual box */
+.gfx {
+  flex: 1 0 19%; 
+  margin: 5px;
+}
+
+
+/* individual box */
+.web {
+  flex: 1 0 19%; 
+  margin: 5px;
+}
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Animate content position when menu is showing  */
+  input[type="checkbox"]:checked ~ .content {
+    transform: translateX(20%);
   }
+
+  input[type="checkbox"]:checked ~ nav {
+    width: 20%;
+  }
+
+/* individual box */
+.gfx {
+  flex: 1 0 6%; 
+  margin: 5px;
+}
+
+/* individual box */
+.web {
+  flex: 1 0 6%; 
+  margin: 5px;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Animate content position when menu is showing  */
+  input[type="checkbox"]:checked ~ .content {
+    transform: translateX(20%);
+  }
+
+  input[type="checkbox"]:checked ~ nav {
+    width: 20%;
+  }
+
+/* individual box */
+.gfx {
+  flex: 1 0 6%; 
+  margin: 5px;
+}
+
+/* individual box */
+.web {
+  flex: 1 0 6%; 
+  margin: 5px;
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Animate content position when menu is showing  */
+  input[type="checkbox"]:checked ~ .content {
+    transform: translateX(20%);
+  }
+
+  input[type="checkbox"]:checked ~ nav {
+    width: 20%;
+  }
+
+
+  /* individual box */
+.gfx {
+  flex: 1 0 6%; 
+  margin: 5px;
+}
+
+/* individual box */
+.web {
+  flex: 1 0 6%; 
+  margin: 5px;
+}
+
+}

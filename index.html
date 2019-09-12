@@ -21,49 +21,104 @@
   </head>
 
   <body>
+    <section>
+      <input type="checkbox" id="myInput" />
 
-      <section>
-      
-        <input type="checkbox" id="myInput" />
-        <label for="myInput">
-          <span class="bar top"></span>
-          <span class="bar middle"></span>
-          <span class="bar bottom"></span>
-        </label>
+      <label for="myInput">
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+      </label>
 
       <nav>
         <ul class="navList">
-          <li><a href="" class="navAnchor">Intro</a></li>
-          <li><a href="" class="navAnchor">Web Design</a></li>
-          <li><a href="" class="navAnchor">Graphic Design</a></li>
-          <li><a href="" class="navAnchor">Photography</a></li>
-          <li><a href="" class="navAnchor">Marketing</a></li>
+          <li><a href="#intro" class="navAnchor">Intro</a></li>
+          <li><a href="#web-design" class="navAnchor">Web Design</a></li>
+          <li>
+            <a href="#graphic-design" class="navAnchor">Graphic Design</a>
+          </li>
+          <li><a href="#photography" class="navAnchor">Photography</a></li>
+          <li><a href="#marketing" class="navAnchor">Marketing</a></li>
         </ul>
       </nav>
-                        
-        <!-- this div gets animated by the css sibling -->
-        <div class="content">  
-          
 
-<div class ="section-container sectionIntro ">
-  <div class = "sectionContent">
-  <h1>
-    intro
-  </h1>
-<p>
-intro text
-</p>
-</div>
-</div>
+      <!-- this div gets animated by the css sibling -->
+      <div class="content">
+        <a name="intro"></a>
+        <div class="section-container sectionIntro ">
+          <div class="sectionContent">
+            <h1>
+              intro
+            </h1>
+            <p>
+              intro text
+            </p>
+          </div>
+        </div>
 
-<div class ="section-container sectionWeb">more content 2</div>
-<div class ="section-container sectionGraphicDesign">more content 3</div>
-<div class ="section-container sectionPhotography">more content 4 </div>
-<div class ="section-container sectionMarketing">more content 5</div>
+        <a name="web-design"></a>
+        <div class="section-container sectionWeb">
+          <div class="sectionContent">
+            <h2>Web Design</h2>
+            <p>
+              intro text
+            </p>
+            <div class="web-container">
+                <div class="web web1"></div>
+                <div class="web web2"></div>
+                <div class="web web1"></div>
+                <div class="web web2"></div>
+            </div>
+          </div>
+        </div>
+       
+        <a name="graphic-design"></a>
+        <div class="section-container sectionGraphicDesign"><!-- this is the flex container -->
+          <div class="sectionContent">
+            <h2>Graphic Design</h2>
+            <p>
+              intro text
+            </p>
+            <div class="gfx-container">
+                <div class="gfx gfx1"></div>
+                <div class="gfx gfx2"></div>
+                <div class="gfx gfx3"></div>
+                <div class="gfx gfx4"></div>
+                <div class="gfx gfx5"></div>
+                <div class="gfx gfx6"></div>
+                <div class="gfx gfx7"></div>
+                <div class="gfx gfx8"></div>
+                <div class="gfx gfx9"></div>
+                <div class="gfx gfx10"></div>
+                <div class="gfx gfx11"></div>
+                <div class="gfx gfx12"></div>
+  
+            </div>
+          </div>
+
+
 
         </div>
-      
-      </section>
-
+       
+        <a name="photography"></a>
+        <div class="section-container sectionPhotography">
+          <div class="sectionContent">
+            <h2>Photography</h2>
+            <p>
+              intro text
+            </p>
+          </div>
+        </div>
+        <a name="marketing"></a>
+        <div class="section-container sectionMarketing">
+          <div class="sectionContent">
+            <h2>Marketing</h2>
+            <p>
+              intro text
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
