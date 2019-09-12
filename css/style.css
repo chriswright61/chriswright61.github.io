@@ -192,8 +192,8 @@ h2 {
 }
 
 .sectionIntro {
-  background-color: black;
-  background: linear-gradient(black, white);
+  /* background-color: black;
+  background: linear-gradient(black, white); */
   /* background: url(../img/face-floor.jpg);
   background: url(../img/diversion.jpg); */
   /* background: url(../img/puddle.jpg); */
