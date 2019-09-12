@@ -326,13 +326,18 @@ input[type="checkbox"]:checked ~ label .middle {
 }
 
           /* media queries */
+/* mobile default */
+.sectionIntro {
+  background-color: red;
+}
 
-          .sectionIntro {
-            background-color: black;
-          }
-        
+input[type="checkbox"]:checked ~ .content {
+  transform: translateX(50%);
+}
 
-
+input[type="checkbox"]:checked ~ nav {
+  width: 50%;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 
@@ -344,11 +349,11 @@ input[type="checkbox"]:checked ~ label .middle {
 
   /* Animate content position when menu is showing  */
   input[type="checkbox"]:checked ~ .content {
-    transform: translateX(40%);
+    transform: translateX(50%);
   }
 
   input[type="checkbox"]:checked ~ nav {
-    width: 40%;
+    width: 50%;
   }
 
 /* individual box */
