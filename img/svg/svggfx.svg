@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="100mm" height="100mm" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" version="1.1" viewBox="0 0 4408.1 4408.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#2B2A29;stroke-width:8.23;stroke-miterlimit:22.9256}
+    .fil1 {fill:#FEFEFE}
+    .fil2 {fill:#9D9E9E}
+    .fil3 {fill:#5B5B5B}
+    .fil4 {fill:#2B2A29}
+    .fil0 {fill:#2B2A29}
+   ]]>
+  </style>
+ </defs>
+  <circle class="fil0" cx="2204" cy="2204" r="2204"/>
+  <circle class="fil1" cx="2204" cy="2204" r="1897.2"/>
+  <path class="fil2" d="m2538.6 331.25c878.71 160.13 1548 926.26 1565.7 1853.1h-1565.7v-1853.1z"/>
+  <path class="fil3" d="m1024.7 2229.9l-727.92-5.34c4.34-614.84 288.12-1161.3 727.92-1514.7v1520z"/>
+  <path class="fil3" d="m1023.6 2170.5l-727.92 5.34c4.34 614.84 288.12 1161.3 727.92 1514.7v-1520z"/>
+  <rect class="fil4 str0" x="1025.3" y="2184.3" width="1514" height="1514"/>
+</svg>

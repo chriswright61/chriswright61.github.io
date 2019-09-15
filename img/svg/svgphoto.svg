@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="100mm" height="100mm" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" version="1.1" viewBox="0 0 10148.24 10148.24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil4 {fill:#FEFEFE}
+    .fil2 {fill:#898989}
+    .fil1 {fill:#5B5B5B}
+    .fil3 {fill:#434242}
+    .fil0 {fill:#2B2A29}
+   ]]>
+  </style>
+ </defs>
+   <circle class="fil0" cx="5074.1" cy="5074.1" r="5074.1"/>
+   <circle class="fil1" cx="5074.1" cy="5074.1" r="4367.8"/>
+   <circle class="fil2" cx="5074.1" cy="5074.1" r="4044"/>
+   <circle class="fil1" cx="5074.1" cy="5074.1" r="3283.6"/>
+   <circle class="fil3" cx="5074.1" cy="5074.1" r="3057.9"/>
+   <polygon class="fil4" points="5393.2 4283.6 5626 4512.2 5858.8 4740.8 5861.7 5067 5864.7 5393.2 5636.1 5626 5407.5 5858.8 5081.2 5861.7 4755 5864.7 4522.2 5636.1 4289.5 5407.5 4286.5 5081.2 4283.6 4755 4512.2 4522.2 4740.8 4289.5 5067 4286.5"/>
+</svg>

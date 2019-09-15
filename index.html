@@ -7,8 +7,11 @@
     <link href="css/style.css" rel="stylesheet" />
 
     <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap"  rel="stylesheet" />
-   
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- <link
       href="vendor/font-awesome/css/font-awesome.min.css"
       rel="stylesheet"
@@ -20,7 +23,6 @@
 
   <body>
     <section>
-      
       <!-- navigation button -->
       <input type="checkbox" id="myInput" />
       <label for="myInput">
@@ -35,22 +37,27 @@
           <li><a href="#web-design" class="navAnchor">Web Design</a></li>
           <li><a href="#graphic-design" class="navAnchor">Graphic Design</a></li>
           <li><a href="#photography" class="navAnchor">Photography</a></li>
-          <li><a href="#marketing" class="navAnchor">Marketing</a></li>
+          <!-- <li><a href="#marketing" class="navAnchor">Marketing</a></li> -->
+          <!-- <li><a href="#graphics3d" class="navAnchor">3D</a></li> -->
+          <!-- <li><a href="#video" class="navAnchor">video</a></li> -->
         </ul>
       </nav>
 
       <!-- this div gets animated by the css sibling -->
       <div class="content">
-
         <a name="intro"></a>
         <div class="section-container sectionIntro">
           <div class="sectionContent">
             <h1>
               Chris Wright
             </h1>
+
+            <div class="svgcontainer svgintro"></div>
+
             <p>
-              Web Design&nbsp; &nbsp; &nbsp;Graphic Design &nbsp; &nbsp; &nbsp;Photography
+              Web Design, Graphic Design &amp; Photography
             </p>
+            <a href="#web-design" class="button">See more</a>
           </div>
         </div>
 
@@ -58,86 +65,41 @@
         <div class="section-container sectionWeb">
           <div class="sectionContent">
             <h2>Web Design</h2>
+            <div class="svgcontainer svgweb"></div>
             <p>
               Static sites to Drupal Content Management systems
             </p>
-            <div class="web-container">
-                <div class="web web1"> 
-                  <img class="webimage" src="img/web/web-c20.jpg" alt="website"> 
-                </div>
-                <div class="web web2">  
-                  <img class="webimage" src="img/web/web-victorian.jpg" alt="website">
-                </div>
-
-
-            </div>
+            <a href="webdesign.html" class="button">See more</a>
           </div>
         </div>
-       
+
         <a name="graphic-design"></a>
-        <div class="section-container sectionGraphicDesign"><!-- this is the flex container -->
+        <div class="section-container sectionGraphicDesign">
           <div class="sectionContent">
             <h2>Graphic Design</h2>
+            <div class="svgcontainer svggraphics"></div>
             <p>
-              intro text
+              Posters and Brochures to Logos &amp; Branding
             </p>
-            <div class="gfx-container">
 
-               
-
-                <div class="gfx gfx1">
-                    <img class="gfximage" src="img/posters/portfolio1.jpg" alt="graphic design">
-                </div>
-
-                <div class="gfx gfx2">
-                    <img class="gfximage" src="img/posters/portfolio2.jpg" alt="graphic design">
-                </div>
-
-                <div class="gfx gfx3">
-                    <img class="gfximage" src="img/posters/portfolio3.jpg" alt="graphic design">
-                </div>
-
-                <div class="gfx gfx4">
-                    <img class="gfximage" src="img/posters/portfolio4.jpg" alt="graphic design">
-                </div>
-
-
-
-                <div class="gfx gfx5">
-                    <img class="gfximage" src="img/posters/portfolio5.jpg" alt="graphic design">
-                </div>
-
-                <div class="gfx gfx6">
-                    <img class="gfximage" src="img/posters/portfolio6.jpg" alt="graphic design">
-                </div>
-
-                <div class="gfx gfx7">
-                    <img class="gfximage" src="img/posters/portfolio7.jpg" alt="graphic design">
-                </div>
-
-                <div class="gfx gfx8">
-                    <img class="gfximage" src="img/posters/portfolio8.jpg" alt="graphic design">
-                </div>
-             
-  
-            </div>
+            <a href="graphicdesign.html" class="button">See more</a>
           </div>
-
-
-
         </div>
-       
+
         <a name="photography"></a>
         <div class="section-container sectionPhotography">
           <div class="sectionContent">
             <h2>Photography</h2>
+            <div class="svgcontainer svgphotography"></div>
             <p>
-              intro text
+              Landscape, cityscapes, alternative street photography and urban
+              spaces
             </p>
+            <a href="photography.html" class="button">See more</a>
           </div>
         </div>
 
-        <a name="marketing"></a>
+        <!-- <a name="marketing"></a>
         <div class="section-container sectionMarketing">
           <div class="sectionContent">
             <h2>Marketing</h2>
@@ -145,9 +107,14 @@
               intro text
             </p>
           </div>
-        </div>
+        </div> -->
 
-      </div> <!-- end of .content div -->
+        <!-- video and motion graphics -->
+        <!-- 3d graphics -->
+
+
+      </div>
+      <!-- end of .content div -->
     </section>
   </body>
 </html>

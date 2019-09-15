@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/web.css" rel="stylesheet" />
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet" />
+
+    <title>Chris Wright - Web Design</title>
+  </head>
+
+  <body>
+    <section>
+      <!-- navigation button -->
+      <input type="checkbox" id="myInput" />
+      <label for="myInput">
+        <span class="bar top"></span>
+        <span class="bar middle"></span>
+        <span class="bar bottom"></span>
+      </label>
+
+      <nav>
+        <ul class="navList">
+          <li><a href="index.html#home" class="navAnchor">Intro</a></li>
+          <li><a href="index.html#web-design" class="navAnchor">Web Design</a></li>
+          <li><a href="index.html#graphic-design" class="navAnchor">Graphic Design</a></li>
+          <li><a href="index.html#photography" class="navAnchor">Photography</a></li>
+          <!-- <li><a href="#marketing" class="navAnchor">Marketing</a></li> -->
+          <!-- <li><a href="#graphics3d" class="navAnchor">3D</a></li> -->
+          <!-- <li><a href="#video" class="navAnchor">video</a></li> -->
+        </ul>
+      </nav>
+
+      <!-- this div gets animated by the css sibling -->
+      <div class="content">
+       
+        <div class="section-container sectionWeb">
+            <div class="sectionContent">
+                <h2>Web Design</h2>
+                <!-- <div class="svgcontainer svgweb"></div>
+                <p>Static sites to Drupal Content Management systems</p>
+                <a href="index.html#web-design" class="button">back</a> -->
+            </div>
+        </div>
+
+        <div class="sectionWebcontent">
+            <div class="websitecontent">
+                <h3>Victorian Fires</h3>
+                <div class ="webimage"><img src="img/web/web-victorian.jpg" alt="victorian fires website"></div>
+                <div class="linktositeurl">
+                    <a href="http://www.victorianfires.co.uk/">victorianfires.co.uk</a>
+                </div>
+                <p>Cast iron fireplace reproductions from the Georgian to the Edwardian Era </p>
+                <p>Drupal 8</p>
+         
+            </div>
+
+            <div class="websitecontent">
+                <h3>Twentieth Century Fires</h3>
+                <div class ="webimage"><img src="img/web/web-c20.jpg" alt="twentieth century fires website"></div>
+                <div class="linktositeurl">
+                        <a href="http://www.c20fires.co.uk/">c20fires.co.uk</a>
+                </div>
+                <p>Original and reproductions of fireplaces from the Twentieth Century</p>
+                <p>Drupal 7</p>    
+            </div>
+        </div>
+
+      </div>
+      <!-- end of .content div -->
+    </section>
+  </body>
+</html>
