@@ -67,7 +67,7 @@ section {
 .sectionContent h1,
 h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 6em;
+  font-size: 4em;
   margin: 0;
   text-align: center;
 }
@@ -78,10 +78,6 @@ h2 {
   margin: 0;
   text-align: center;
 }
-
-
-
-
 
 /* navigation */
 nav {
@@ -203,8 +199,6 @@ input[type="checkbox"]:checked ~ label .bottom {
 input[type="checkbox"]:checked ~ label .middle {
   width: 0;
 }
-
-
 
 .button{
   display: inline-block;
